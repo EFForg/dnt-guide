@@ -1,4 +1,4 @@
-﻿# EFF HOW TO IMPLEMENT DNT GUIDE
+# EFF HOW TO IMPLEMENT DNT GUIDE
 
 This repository contains the guide for implementing EFF's [DNT Policy](https://www.eff.org/dnt-policy). We want your contributions and invite you to use it as a  space to share advice on web privacy engineering. If you have suggestions for other DNT-compliant service providers, please submit them. We are also looking for configurations for Windows servers to limit log collection (we are providing example code for Nginx, Apache and Logrotate). In the future, EFF will add sections dedicated to advertising and commenting systems.
 
@@ -158,7 +158,7 @@ map $http_dnt $loggable {
 ```
 And add the following inside the `server` directive:
 ```
-access_log /var/log/nginx/access.log combined if=$loggable
+access_log /var/log/nginx/access.log combined if=$loggable;
 ```
 
 __Approach #2:__ Log those requests separately.
@@ -174,8 +174,8 @@ map $http_dnt $loggable {
 ```
 And add the following inside the `server` directive:
 ```
-access_log /var/log/nginx/access.log combined if=$loggable
-access_log /var/log/nginx/dnt/access.log combined if=!$loggable
+access_log /var/log/nginx/access.log combined if=$loggable;
+access_log /var/log/nginx/dnt/access.log combined if=$http_dnt;
 ```
 See the Logrotate section below for the rest of the configuration instructions.
 
