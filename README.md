@@ -401,7 +401,7 @@ A domain which falsely declares itself compliant with the DNT policy document co
 ### Regulatory Regimes
  __California AB 370__
  
-Regardless of where your website is located, this [law](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?%20bill_id=201320140AB370) modifies the California Online Privacy Protection Act to require that a site discloses how they respond to the Do Not Track signal. Some sites will try and filter their Californian users but it is most likely easier to provide the same information to all users. Document your DNT support in your privacy policy.
+Regardless of where your website is located, this [law](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201320140AB370) modifies the California Online Privacy Protection Act to require that a site discloses how they respond to the Do Not Track signal. Some sites will try and filter their Californian users but it is most likely easier to provide the same information to all users. Document your DNT support in your privacy policy.
 
 
  __General Data Protection Regulation (GDPR) and ePrivacy Regulation__
